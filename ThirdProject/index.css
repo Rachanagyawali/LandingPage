@@ -1,0 +1,209 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#main{
+ width:100%;
+ min-height:100vh;
+}
+
+#top{
+    width:100%;
+    min-height:60vh;
+    background-image: url(https://media.istockphoto.com/id/1273848981/photo/kid-with-umbrella-on-colored-background.jpg?s=612x612&w=0&k=20&c=LqOTXvcbq_oDr2jX60um-8ue49Rasfv6oEXTz22UDuk=);
+    background-size: cover;
+    background-position:0% 30%;
+}
+
+#overlay{
+    position: relative;
+    width:100%;
+  
+    min-height:inherit;
+    top:40%;
+    background-color: rgba(0,0,0,0);
+    
+}
+
+#text{
+    width:100%;
+    min-height:inherit;
+  
+    bottom: 20%;
+    padding:1 8vw;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+   
+}
+
+#textright{
+    width:60%;
+    display:flex;
+    right:400px;
+    min-height: inherit;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+   
+}
+
+
+#textright p{
+    font-size: 18px;
+    width:40%;
+}
+#textright i{
+    color:white;
+    font-size: 20px;
+}
+
+#text h1{
+    font-size: 6vw;
+    font-weight: 500;
+    width:30%;
+    
+}
+#bottom{
+    width:100%;
+   min-height:40vh;
+    background-color: green;
+    display: flex;
+}
+
+#bone{
+    padding: 30px;
+    width:25%;
+   min-height:inherit;
+    text-align: center;
+    background-color:white;
+}
+
+#bone p{
+    font-size: 18px;
+    margin-top: 20px;
+    
+    text-align: left;
+   color: rgba(0,0,0.5,0.6);
+}
+#btwo{
+    width:25%;
+    min-height:inherit;
+    background-image: url(https://media.istockphoto.com/id/610231478/photo/sunset-with-paragliding.jpg?s=612x612&w=0&k=20&c=QQL9NsggZLufMGHuXi2IvNhTGhjhyolUfjMKmRJjM8I=);
+    background-size: cover;
+    background-position: center;
+}
+#bthree{
+    width:20%;
+    min-height:inherit;
+    background-color:purple;
+}
+
+#bthreetop{
+   min-height:20vh;
+   width:100%;
+    background-color:white;
+    text-align:center;
+    padding:10px;
+}
+
+#bthreetop p{
+  text-align: left;
+  margin-top: 15px;
+  color:rgba(20, 20, 20, 0.5);
+}
+
+#bthreebottom{
+    min-height:20vh;
+    width:100%;
+ background-image: url(https://media.istockphoto.com/id/622182404/photo/seascape-during-sundown-beautiful-natural-seascape.jpg?s=612x612&w=0&k=20&c=B4FgXX4ZxnFi4oPpgzJjhVCj7LEMy6RKAsjrcIxtPxk=);
+ background-size: cover;
+ background-position: center;
+}
+
+#bfour{
+    width:30%;
+    min-height:inherit;
+    background-color:#444;
+    color:#fff;
+    padding: 30px;
+    text-align: center;
+
+}
+
+.notf{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.notf #photo{
+    
+    width:20px;
+    height:20px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.notf p{
+    width:90%;
+    font-size: 12px;
+    text-align: left;
+}
+
+@media(max-width:500px){
+    #overlay #text{
+        flex-direction: column
+        ;
+        align-items: flex-start;
+    }
+
+    #text h1{
+        font-size: 10vw;
+    }
+
+    #bottom{
+        min-height: 20vh;
+    }
+
+    #overlay #text #textright{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #overlay #text #textright p{
+    width:initial;
+    margin-top: 20px;
+    }
+
+    #overlay #text #textright #icons{
+        margin-top: 30px;
+    }
+
+    #bottom{
+        flex-direction: column;
+    }
+
+    #bone{
+        width:100%;
+    }
+
+    #btwo{
+        width:100%;
+    }
+
+    #bthree{
+        flex-direction: column;
+        width:100%;
+    }
+
+    #bfour{
+        width:100%;
+    }
+}
