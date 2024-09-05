@@ -1,0 +1,279 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+#main{
+     height:100vh;
+     width:100%;
+    background-color: hsl(28, 61%, 73%);
+    /* overflow: hidden; */
+    display: flex;
+}
+
+.img1{
+    height:100%;
+}
+
+.img2{
+    height:100%;
+}
+#part1{
+    height:100%;
+    width:26%;
+    /* background-color: red; */
+}
+
+#part2{
+    height:100%;
+    width:68%;
+    background-color: rgb(0.1, 193, 0.2);
+    background-image: url(https://media.istockphoto.com/id/1135730171/photo/smiling-young-woman-beauty-freedom-happiness.jpg?s=612x612&w=0&k=20&c=ndBAPOFSqsKS1JD15C_RWa18JlDgzu1R9QkY4LCcwH0=);
+    background-size: cover;
+    background-position: center;
+}
+#overlay{
+    height:100%;
+    width:100%;
+    background-color:hsl(91, 19, 22,0.023);
+}
+
+#part3{
+    height:100%;
+    width:7%;
+    /* background-color: rgb(0,100,10); */
+}
+
+#text-div{
+    /* height:300px; */
+    position: absolute;
+    width:400px;
+    /* background-color: red; */
+    left:7%;
+    top:30%;
+    transform: translate((0,-50%));
+}
+
+#text-div h1{
+    font-size: 85px;
+    line-height: 78px;
+    font-family: gilroy;
+    letter-spacing: 8px;
+    font-weight: 500;
+    text-transform:uppercase;
+    color:white;
+}
+
+#small-img-div{
+    height:400px;
+    width:300px;
+    background-image:url(https://media.istockphoto.com/id/1126565101/photo/beautiful-fashionable-young-woman-posing-with-eyes-closed-and-tumeric-on-background.jpg?s=612x612&w=0&k=20&c=42PTJNWxVoLLm-y8crzsEdFxhOIuGaqkH9stGeSKqs4=);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top:50%;
+    right:5%;
+    transform: translate((0,-50%));
+}
+
+#overlay-in{
+    height:30%;
+    width:100%;
+    background-color:hsl(91, 19, 22,0.02);
+
+}
+
+#vertical-text{
+    position: absolute;
+    right:-26%;
+     top:30%;
+    transform: rotate(90deg);
+     /* width:100%; */
+    /* background-color: red;  */
+
+}
+
+#vertical-text h1{
+    font-size: 80px;
+    font-weight: 900;
+    font-family: gilroy;
+    text-transform: uppercase;
+    color:transparent;
+   
+    -webkit-text-stroke-width:2px;
+    -webkit-text-stroke-color: #fff;
+
+}
+
+#nav{
+    position: absolute;
+    width:350px;
+    top:5%;
+    left:7%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#nav img{
+    height: 60px;
+
+}
+
+#nav h5{
+    font-size: 20px;
+    color:#fff;
+    font-family: gilroy;
+}
+
+
+
+  /* For screen widths between 768px and 1024px */
+@media (max-width: 1024px) {
+    #text-div h1 {
+        font-size: 60px;
+        line-height: 55px;
+    }
+
+    #small-img-div {
+        height: 300px;
+        width: 200px;
+        right: 2%;
+    }
+
+    #vertical-text h1 {
+        font-size: 60px;
+    }
+
+    #nav h5 {
+        font-size: 16px;
+    }
+
+    #nav img {
+        height: 50px;
+    }
+}
+
+/* For screen widths between 480px and 768px */
+@media (max-width: 768px) {
+    #text-div h1 {
+        font-size: 40px;
+        color:black;
+        line-height: 25px; 
+        
+        
+    }
+    #part2{
+        height: 250px;
+        width: 250px;
+        left: 5%;
+        top:52%;
+        position: absolute;
+    }
+
+    #small-img-div {
+        height: 250px;
+        width: 250px;
+        right: 7%;
+        top:20%;
+    }
+
+    #vertical-text{
+        position: absolute;
+        right:10%;
+         top:70%;
+        transform: rotate(360deg);
+       
+    
+    }
+    
+    #vertical-text h1{
+        font-size: 30px;
+        color:red;
+        
+       
+       
+    
+    }
+
+    #nav h5 {
+        font-size: 24px;
+    }
+
+    #nav img {
+        height: 70px;
+        width:50%;
+        padding:10px;
+    }
+
+    #part1, #part3 {
+        width: 100%;
+        height: auto;
+    }
+
+    #main {
+        flex-direction: column;
+    }
+}
+
+/* For screen widths less than 480px */
+@media (max-width: 480px) {
+    #text-div h1 {
+        font-size: 30px;
+        line-height: 28px;
+    }
+
+    
+    #vertical-text h1 {
+        
+        /* font-size: 20px;  */
+        display:none;
+        
+        
+       
+    }
+    #part2{
+        display: none;
+    }
+
+    #nav h5 {
+        font-size: 20px;
+    }
+
+    #nav img {
+        height: 40px;
+        width:50px;
+    }
+
+    #main {
+        padding: 10px;
+    }
+
+    #nav {
+        width: 100%;
+        left: 0;
+        justify-content: center;
+    }
+
+    #text-div {
+        width: 100%;
+        left: 0;
+        top: 20%;
+        text-align: center;
+    }
+
+    #small-img-div {
+        height: 220px;
+        width: 220px;
+        right: 0;
+       top:65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
